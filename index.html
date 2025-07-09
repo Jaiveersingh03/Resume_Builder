@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaiveer Singh | 3D Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    header.hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      margin: 2rem;
+      border-radius: 15px;
+      transform: rotateY(5deg) rotateX(5deg);
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00ffe7;
+      box-shadow: 0 0 20px rgba(0, 255, 231, 0.6);
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease, border-radius 0.3s ease;
+      cursor: pointer;
+    }
+    .profile-pic:hover {
+      transform: scale(2) translateY(20px);
+      border-radius: 10px;
+      z-index: 1000;
+      position: relative;
+    }
+    .card {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      transform: perspective(800px) rotateY(-5deg) rotateX(5deg);
+      transition: transform 0.5s ease;
+    }
+    .card:hover {
+      transform: perspective(800px) rotateY(0deg) rotateX(0deg) scale(1.02);
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #00ffe7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #00ffe7;
+      color: #000;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta:hover {
+      background-color: #00c6a7;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img src="jaiveer1.jpg" alt="Jaiveer Singh" class="profile-pic" />
+    <h1>Jaiveer Singh</h1>
+    <p>AI & Data Science Engineer | Creative Problem Solver</p>
+    <a href="#projects" class="cta">Explore Portfolio</a>
+  </header>
+
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>I'm currently pursuing B.Tech in AI & Data Science at Kongu Engineering College. I'm passionate about solving problems, data analysis, and building innovative applications.</p>
+  </section>
+
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: Java, Python (NumPy, Pandas), C</li>
+      <li>Tools: Power BI, Tableau</li>
+      <li>Databases: MySQL (Intermediate), MongoDB (Beginner)</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Ham and Spam Detection</strong> – Python FastAPI backend with JS frontend</li>
+      <li><strong>Spotify Clone</strong> – Music streaming site using HTML, CSS, JS</li>
+      <li><strong>COVID Analysis</strong> – 5-year data analysis on top affected countries</li>
+    </ul>
+  </section>
+
+  <section id="education" class="card">
+    <h2>Education</h2>
+    <p>B.Tech AI & DS, Kongu Engineering College<br>HSC - 86% | SLC - 83.9%</p>
+  </section>
+
+  <section id="achievements" class="card">
+    <h2>Achievements & Papers</h2>
+    <ul>
+      <li>3 Years in NCC | B & C Certificates</li>
+      <li>AI in Agriculture - SRM Presentation</li>
+      <li>AI Tracking System - Erode Collector Office</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Connect</h2>
+    <p>Email: <a href="mailto:jaiveersingh.22aid@kongu.edu">jaiveersingh.22aid@kongu.edu</a></p>
+    <p>Phone: +91 7982133793</p>
+    <p><a href="https://leetcode.com/u//Jaiveer" target="_blank">LeetCode</a> | <a href="https://github.com/Jaiveer" target="_blank">GitHub</a></p>
+  </section>
+
+  <footer>
+    <p>Designed & Developed by Jaiveer Singh</p>
+  </footer>
+
+  <script>
+    // Optional future enhancements for 3D or animations
+  </script>
+</body>
+</html>
