@@ -1,3 +1,4 @@
+#Resume Builder
 
 #Resume Builder
 
@@ -9,6 +10,8 @@ A dynamic resume builder built with HTML, CSS, and JavaScript that allows users 
 🖨️ Download as PDF or print directly
 📱 Fully responsive design
 🧩 Modular code structure for easy customization
+
+![Screenshot](image.png)
 
 #🛠️ Technologies Used
 
@@ -32,9 +35,5 @@ Dark mode support
 Save/load user data using local storage or backend
 Export to DOCX format
 
-
-#📄 License
-
-This project is open-source and available under the MIT License.
 
 
